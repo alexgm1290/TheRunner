@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC021F5C21CD9FCF00A3FF15 /* ObjectHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC021F5B21CD9FCF00A3FF15 /* ObjectHelper.swift */; };
 		BC07ED0821C9F06B007FD220 /* Level_0-1.sks in Resources */ = {isa = PBXBuildFile; fileRef = BC07ED0721C9F06B007FD220 /* Level_0-1.sks */; };
 		BC07ED0B21C9F187007FD220 /* TileSets.sks in Resources */ = {isa = PBXBuildFile; fileRef = BC07ED0A21C9F187007FD220 /* TileSets.sks */; };
 		BC07ED0E21C9F76C007FD220 /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC07ED0D21C9F76C007FD220 /* SKNode+Extensions.swift */; };
@@ -21,11 +22,24 @@
 		BC5CB41E21C8223600F3DA50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5CB41C21C8223600F3DA50 /* Main.storyboard */; };
 		BC5CB42021C8223800F3DA50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5CB41F21C8223800F3DA50 /* Assets.xcassets */; };
 		BC5CB42321C8223800F3DA50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5CB42121C8223800F3DA50 /* LaunchScreen.storyboard */; };
+		BC8D257D21D57316003FA5C2 /* ParticleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D257C21D57316003FA5C2 /* ParticleHelper.swift */; };
+		BC8D258121D57573003FA5C2 /* CoinDustEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = BC8D257F21D57573003FA5C2 /* CoinDustEmitter.sks */; };
+		BC8D258221D57573003FA5C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8D258021D57573003FA5C2 /* Assets.xcassets */; };
+		BC8D258421D5791D003FA5C2 /* BrakeSparkEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = BC8D258321D5791D003FA5C2 /* BrakeSparkEmitter.sks */; };
+		BC8D258721D68243003FA5C2 /* HUDDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D258621D68243003FA5C2 /* HUDDelegate.swift */; };
+		BC8D258921D682C9003FA5C2 /* GameHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D258821D682C9003FA5C2 /* GameHUD.swift */; };
+		BC8D258D21D6833E003FA5C2 /* unanimous.inverted-brk.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC8D258C21D6832F003FA5C2 /* unanimous.inverted-brk.ttf */; };
+		BC8D258F21D693FA003FA5C2 /* PopupNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D258E21D693FA003FA5C2 /* PopupNode.swift */; };
+		BC8D259121D6942E003FA5C2 /* ScorePopupNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D259021D6942E003FA5C2 /* ScorePopupNode.swift */; };
+		BC8D259321D69463003FA5C2 /* BannerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D259221D69463003FA5C2 /* BannerLabel.swift */; };
+		BC8D259521D69488003FA5C2 /* PopupButtonHandlerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D259421D69488003FA5C2 /* PopupButtonHandlerDelegate.swift */; };
+		BC8D259721D694F1003FA5C2 /* SpriteKitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D259621D694F1003FA5C2 /* SpriteKitButton.swift */; };
 		BCAB1FCE21CC3AD10089E485 /* PhysicsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB1FCD21CC3AD10089E485 /* PhysicsHelper.swift */; };
 		BCAB1FD021CC44D50089E485 /* GroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB1FCF21CC44D50089E485 /* GroundNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC021F5B21CD9FCF00A3FF15 /* ObjectHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectHelper.swift; sourceTree = "<group>"; };
 		BC07ED0721C9F06B007FD220 /* Level_0-1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Level_0-1.sks"; sourceTree = "<group>"; };
 		BC07ED0A21C9F187007FD220 /* TileSets.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSets.sks; sourceTree = "<group>"; };
 		BC07ED0D21C9F76C007FD220 /* SKNode+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
@@ -42,6 +56,18 @@
 		BC5CB41F21C8223800F3DA50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC5CB42221C8223800F3DA50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC5CB42421C8223800F3DA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8D257C21D57316003FA5C2 /* ParticleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleHelper.swift; sourceTree = "<group>"; };
+		BC8D257F21D57573003FA5C2 /* CoinDustEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CoinDustEmitter.sks; sourceTree = "<group>"; };
+		BC8D258021D57573003FA5C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC8D258321D5791D003FA5C2 /* BrakeSparkEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BrakeSparkEmitter.sks; sourceTree = "<group>"; };
+		BC8D258621D68243003FA5C2 /* HUDDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDDelegate.swift; sourceTree = "<group>"; };
+		BC8D258821D682C9003FA5C2 /* GameHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHUD.swift; sourceTree = "<group>"; };
+		BC8D258C21D6832F003FA5C2 /* unanimous.inverted-brk.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "unanimous.inverted-brk.ttf"; path = "The Runner/Assets/Font/unanimous.inverted-brk.ttf"; sourceTree = SOURCE_ROOT; };
+		BC8D258E21D693FA003FA5C2 /* PopupNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupNode.swift; sourceTree = "<group>"; };
+		BC8D259021D6942E003FA5C2 /* ScorePopupNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePopupNode.swift; sourceTree = "<group>"; };
+		BC8D259221D69463003FA5C2 /* BannerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerLabel.swift; sourceTree = "<group>"; };
+		BC8D259421D69488003FA5C2 /* PopupButtonHandlerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupButtonHandlerDelegate.swift; sourceTree = "<group>"; };
+		BC8D259621D694F1003FA5C2 /* SpriteKitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitButton.swift; sourceTree = "<group>"; };
 		BCAB1FCD21CC3AD10089E485 /* PhysicsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsHelper.swift; sourceTree = "<group>"; };
 		BCAB1FCF21CC44D50089E485 /* GroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +164,11 @@
 			children = (
 				BC07ED1721CB00F0007FD220 /* Player.swift */,
 				BCAB1FCF21CC44D50089E485 /* GroundNode.swift */,
+				BC8D258821D682C9003FA5C2 /* GameHUD.swift */,
+				BC8D258E21D693FA003FA5C2 /* PopupNode.swift */,
+				BC8D259021D6942E003FA5C2 /* ScorePopupNode.swift */,
+				BC8D259221D69463003FA5C2 /* BannerLabel.swift */,
+				BC8D259621D694F1003FA5C2 /* SpriteKitButton.swift */,
 			);
 			path = "Custom Classes";
 			sourceTree = "<group>";
@@ -161,6 +192,9 @@
 		BC5CB41121C8223600F3DA50 /* The Runner */ = {
 			isa = PBXGroup;
 			children = (
+				BC8D258A21D6830A003FA5C2 /* Resources */,
+				BC8D258521D68220003FA5C2 /* Protocols */,
+				BC8D257E21D57528003FA5C2 /* Particle Emitters */,
 				BCAB1FCC21CC3AA00089E485 /* Helper Files */,
 				BC07ED1621CB00D1007FD220 /* Custom Classes */,
 				BC07ED0F21CAEB93007FD220 /* Layers */,
@@ -176,11 +210,48 @@
 			path = "The Runner";
 			sourceTree = "<group>";
 		};
+		BC8D257E21D57528003FA5C2 /* Particle Emitters */ = {
+			isa = PBXGroup;
+			children = (
+				BC8D257F21D57573003FA5C2 /* CoinDustEmitter.sks */,
+				BC8D258021D57573003FA5C2 /* Assets.xcassets */,
+				BC8D258321D5791D003FA5C2 /* BrakeSparkEmitter.sks */,
+			);
+			path = "Particle Emitters";
+			sourceTree = "<group>";
+		};
+		BC8D258521D68220003FA5C2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BC8D258621D68243003FA5C2 /* HUDDelegate.swift */,
+				BC8D259421D69488003FA5C2 /* PopupButtonHandlerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BC8D258A21D6830A003FA5C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC8D258B21D6831A003FA5C2 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC8D258B21D6831A003FA5C2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BC8D258C21D6832F003FA5C2 /* unanimous.inverted-brk.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		BCAB1FCC21CC3AA00089E485 /* Helper Files */ = {
 			isa = PBXGroup;
 			children = (
 				BCAB1FCD21CC3AD10089E485 /* PhysicsHelper.swift */,
 				BC489B8A21CD5606008994D4 /* AnimationHelper.swift */,
+				BC021F5B21CD9FCF00A3FF15 /* ObjectHelper.swift */,
+				BC8D257C21D57316003FA5C2 /* ParticleHelper.swift */,
 			);
 			path = "Helper Files";
 			sourceTree = "<group>";
@@ -244,10 +315,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC5CB41E21C8223600F3DA50 /* Main.storyboard in Resources */,
+				BC8D258D21D6833E003FA5C2 /* unanimous.inverted-brk.ttf in Resources */,
 				BC07ED0821C9F06B007FD220 /* Level_0-1.sks in Resources */,
 				BC07ED0B21C9F187007FD220 /* TileSets.sks in Resources */,
 				BC5CB42021C8223800F3DA50 /* Assets.xcassets in Resources */,
+				BC8D258421D5791D003FA5C2 /* BrakeSparkEmitter.sks in Resources */,
+				BC8D258221D57573003FA5C2 /* Assets.xcassets in Resources */,
 				BC5CB42321C8223800F3DA50 /* LaunchScreen.storyboard in Resources */,
+				BC8D258121D57573003FA5C2 /* CoinDustEmitter.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +335,23 @@
 			files = (
 				BC5CB41921C8223600F3DA50 /* GameScene.swift in Sources */,
 				BC07ED0E21C9F76C007FD220 /* SKNode+Extensions.swift in Sources */,
+				BC8D258721D68243003FA5C2 /* HUDDelegate.swift in Sources */,
 				BC07ED1121CAEBB7007FD220 /* Layer.swift in Sources */,
+				BC8D258F21D693FA003FA5C2 /* PopupNode.swift in Sources */,
+				BC8D258921D682C9003FA5C2 /* GameHUD.swift in Sources */,
 				BC07ED1821CB00F0007FD220 /* Player.swift in Sources */,
+				BC021F5C21CD9FCF00A3FF15 /* ObjectHelper.swift in Sources */,
+				BC8D259521D69488003FA5C2 /* PopupButtonHandlerDelegate.swift in Sources */,
 				BC5CB41B21C8223600F3DA50 /* GameViewController.swift in Sources */,
+				BC8D259121D6942E003FA5C2 /* ScorePopupNode.swift in Sources */,
 				BC07ED1521CAFE04007FD220 /* GameConstants.swift in Sources */,
+				BC8D257D21D57316003FA5C2 /* ParticleHelper.swift in Sources */,
 				BC489B8B21CD5606008994D4 /* AnimationHelper.swift in Sources */,
 				BC5CB41321C8223600F3DA50 /* AppDelegate.swift in Sources */,
+				BC8D259721D694F1003FA5C2 /* SpriteKitButton.swift in Sources */,
 				BC07ED1321CAF98E007FD220 /* RepeatingLayer.swift in Sources */,
 				BCAB1FD021CC44D50089E485 /* GroundNode.swift in Sources */,
+				BC8D259321D69463003FA5C2 /* BannerLabel.swift in Sources */,
 				BCAB1FCE21CC3AD10089E485 /* PhysicsHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,9 +17,26 @@ class PhysicsHelper {
             sprite.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: sprite.size.width / 2, height: sprite.size.height))
             sprite.physicsBody?.restitution = 0
             sprite.physicsBody?.allowsRotation = false
-            
+            sprite.physicsBody?.categoryBitMask = GameConstants.PhysicsCategories.playerCategory
+            sprite.physicsBody?.collisionBitMask = GameConstants.PhysicsCategories.groundCategory | GameConstants.PhysicsCategories.finishCategory
+            sprite.physicsBody?.contactTestBitMask = GameConstants.PhysicsCategories.allCategory
+        case GameConstants.StringConstants.finishLineName:
+            sprite.physicsBody = SKPhysicsBody(rectangleOf: sprite.size)
+            sprite.physicsBody?.categoryBitMask = GameConstants.PhysicsCategories.finishCategory
+        case GameConstants.StringConstants.enemyName:
+            sprite.physicsBody = SKPhysicsBody(rectangleOf: sprite.size)
+            sprite.physicsBody?.categoryBitMask = GameConstants.PhysicsCategories.enemiesCategory
+        case GameConstants.StringConstants.coinName,
+             _ where GameConstants.StringConstants.superCoinNames.contains(name):
+            sprite.physicsBody = SKPhysicsBody(circleOfRadius: sprite.size.width / 2)
+            sprite.physicsBody!.categoryBitMask = GameConstants.PhysicsCategories.collectibleCategory
         default:
             sprite.physicsBody = SKPhysicsBody(rectangleOf: sprite.size)
+        }
+        
+        if name != GameConstants.StringConstants.playerName {
+            sprite.physicsBody?.contactTestBitMask = GameConstants.PhysicsCategories.playerCategory
+            sprite.physicsBody?.isDynamic = false
         }
     }
     
